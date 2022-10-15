@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/bluedice.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake & Ladder</title>
+  </head>
+
+  <body id="body" class="body">
+    <div class="flexbox-container">
+      <div id="login-div">
+        <h1 id="heading">
+          <span id="snake">Snake &#128013;</span> &
+          <span id="ladder">Ladder &#128681;</span>
+        </h1>
+        <form action="./board.html">
+          <input
+            id="input-name-1"
+            placeholder="Player 1"
+            name="p1"
+            type="text"
+            required
+          /><br />
+
+          <input
+            id="input-name-2"
+            placeholder="Player 2"
+            name="p2"
+            type="text"
+            required
+          /><br />
+
+          <button onclick="submitData()" id="btn" type="submit">
+            PLAY &#128640;
+          </button>
+          <p id="or">--------------OR--------------</p>
+        </form>
+        <a id="btn2" type="submit" href="./board2.html"
+          >PLAY VS COMPUTER &#128435;</a
+        >
+        <p>&#9888; This game is design for PC & Laptop</p>
+      </div>
+    </div>
+    <div>
+      <form action="./about.html">
+        <input id="developer" type="submit" value="About Developer" />
+      </form>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

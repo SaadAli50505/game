@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/bluedice.png" />
+    <link rel="stylesheet" href="./board.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board</title>
+  </head>
+
+  <body>
+    <div class="flexbox-container">
+      <div id="left-div">
+        <h1 id="heading1">Player 1</h1>
+
+        <img id="reddice" src="./img/reddice.png" alt="" />
+        <img id="reddice1" src="./img/reddice1.png" alt="" />
+        <img id="reddice2" src="./img/reddice2.png" alt="" />
+        <img id="reddice3" src="./img/reddice3.png" alt="" />
+        <img id="reddice4" src="./img/reddice4.png" alt="" />
+        <img id="reddice5" src="./img/reddice5.png" alt="" />
+        <img id="reddice6" src="./img/reddice6.png" alt="" />
+        <button onclick="redTurn()" id="btnred">Roll</button>
+        <div>
+          <img id="redtoken0" src="./img/red.png" alt="" />
+        </div>
+      </div>
+      <div id="board-div">
+        <div class="main-container">
+          <div class="container">
+            <div class="product" id="d100">
+              100<img id="redtoken100" src="./img/red.png" alt="" /><img
+                id="bluetoken100"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d99">
+              99<img id="redtoken99" src="./img/red.png" alt="" /><img
+                id="bluetoken99"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d98">
+              98<img id="redtoken98" src="./img/red.png" alt="" /><img
+                id="bluetoken98"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d97">
+              97<img id="redtoken97" src="./img/red.png" alt="" /><img
+                id="bluetoken97"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d96">
+              96<img id="redtoken96" src="./img/red.png" alt="" /><img
+                id="bluetoken96"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d95">
+              95<img id="redtoken95" src="./img/red.png" alt="" /><img
+                id="bluetoken95"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d94">
+              94<img id="redtoken94" src="./img/red.png" alt="" /><img
+                id="bluetoken94"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d93">
+              93<img id="redtoken93" src="./img/red.png" alt="" /><img
+                id="bluetoken93"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d92">
+              92<img id="redtoken92" src="./img/red.png" alt="" /><img
+                id="bluetoken92"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d91">
+              91<img id="redtoken91" src="./img/red.png" alt="" /><img
+                id="bluetoken91"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d81">
+              81<img id="redtoken81" src="./img/red.png" alt="" /><img
+                id="bluetoken81"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d82">
+              82<img id="redtoken82" src="./img/red.png" alt="" /><img
+                id="bluetoken82"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d83">
+              83<img id="redtoken83" src="./img/red.png" alt="" /><img
+                id="bluetoken83"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d84">
+              84<img id="redtoken84" src="./img/red.png" alt="" /><img
+                id="bluetoken84"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d85">
+              85<img id="redtoken85" src="./img/red.png" alt="" /><img
+                id="bluetoken85"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d86">
+              86<img id="redtoken86" src="./img/red.png" alt="" /><img
+                id="bluetoken86"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d87">
+              87<img id="redtoken87" src="./img/red.png" alt="" /><img
+                id="bluetoken87"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d88">
+              88<img id="redtoken88" src="./img/red.png" alt="" /><img
+                id="bluetoken88"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d89">
+              89<img id="redtoken89" src="./img/red.png" alt="" /><img
+                id="bluetoken89"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d90">
+              90<img id="redtoken90" src="./img/red.png" alt="" /><img
+                id="bluetoken90"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d80">
+              80<img id="redtoken80" src="./img/red.png" alt="" /><img
+                id="bluetoken80"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d79">
+              79<img id="redtoken79" src="./img/red.png" alt="" /><img
+                id="bluetoken79"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d78">
+              78<img id="redtoken78" src="./img/red.png" alt="" /><img
+                id="bluetoken78"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d77">
+              77<img id="redtoken77" src="./img/red.png" alt="" /><img
+                id="bluetoken77"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d76">
+              76<img id="redtoken76" src="./img/red.png" alt="" /><img
+                id="bluetoken76"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d75">
+              75<img id="redtoken75" src="./img/red.png" alt="" /><img
+                id="bluetoken75"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d74">
+              74<img id="redtoken74" src="./img/red.png" alt="" /><img
+                id="bluetoken74"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d73">
+              73<img id="redtoken73" src="./img/red.png" alt="" /><img
+                id="bluetoken73"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d72">
+              72<img id="redtoken72" src="./img/red.png" alt="" /><img
+                id="bluetoken72"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d71">
+              71<img id="redtoken71" src="./img/red.png" alt="" /><img
+                id="bluetoken71"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d61">
+              61<img id="redtoken61" src="./img/red.png" alt="" /><img
+                id="bluetoken61"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d62">
+              62<img id="redtoken62" src="./img/red.png" alt="" /><img
+                id="bluetoken62"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d63">
+              63<img id="redtoken63" src="./img/red.png" alt="" /><img
+                id="bluetoken63"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d64">
+              64<img id="redtoken64" src="./img/red.png" alt="" /><img
+                id="bluetoken64"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d65">
+              65<img id="redtoken65" src="./img/red.png" alt="" /><img
+                id="bluetoken65"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d66">
+              66<img id="redtoken66" src="./img/red.png" alt="" /><img
+                id="bluetoken66"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d67">
+              67<img id="redtoken67" src="./img/red.png" alt="" /><img
+                id="bluetoken67"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d68">
+              68<img id="redtoken68" src="./img/red.png" alt="" /><img
+                id="bluetoken68"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d69">
+              69<img id="redtoken69" src="./img/red.png" alt="" /><img
+                id="bluetoken69"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d70">
+              70<img id="redtoken70" src="./img/red.png" alt="" /><img
+                id="bluetoken70"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d60">
+              60<img id="redtoken60" src="./img/red.png" alt="" /><img
+                id="bluetoken60"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d59">
+              59<img id="redtoken59" src="./img/red.png" alt="" /><img
+                id="bluetoken59"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d58">
+              58<img id="redtoken58" src="./img/red.png" alt="" /><img
+                id="bluetoken58"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d57">
+              57<img id="redtoken57" src="./img/red.png" alt="" /><img
+                id="bluetoken57"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d56">
+              56<img id="redtoken56" src="./img/red.png" alt="" /><img
+                id="bluetoken56"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d55">
+              55<img id="redtoken55" src="./img/red.png" alt="" /><img
+                id="bluetoken55"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d54">
+              54<img id="redtoken54" src="./img/red.png" alt="" /><img
+                id="bluetoken54"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d53">
+              53<img id="redtoken53" src="./img/red.png" alt="" /><img
+                id="bluetoken53"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d52">
+              52<img id="redtoken52" src="./img/red.png" alt="" /><img
+                id="bluetoken52"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d51">
+              51<img id="redtoken51" src="./img/red.png" alt="" /><img
+                id="bluetoken51"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d41">
+              41<img id="redtoken41" src="./img/red.png" alt="" /><img
+                id="bluetoken41"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d42">
+              42<img id="redtoken42" src="./img/red.png" alt="" /><img
+                id="bluetoken42"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d43">
+              43<img id="redtoken43" src="./img/red.png" alt="" /><img
+                id="bluetoken43"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d44">
+              44<img id="redtoken44" src="./img/red.png" alt="" /><img
+                id="bluetoken44"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d45">
+              45<img id="redtoken45" src="./img/red.png" alt="" /><img
+                id="bluetoken45"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d46">
+              46<img id="redtoken46" src="./img/red.png" alt="" /><img
+                id="bluetoken46"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d47">
+              47<img id="redtoken47" src="./img/red.png" alt="" /><img
+                id="bluetoken47"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d48">
+              48<img id="redtoken48" src="./img/red.png" alt="" /><img
+                id="bluetoken48"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d49">
+              49<img id="redtoken49" src="./img/red.png" alt="" /><img
+                id="bluetoken49"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d50">
+              50<img id="redtoken50" src="./img/red.png" alt="" /><img
+                id="bluetoken50"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d40">
+              40<img id="redtoken40" src="./img/red.png" alt="" /><img
+                id="bluetoken40"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d39">
+              39<img id="redtoken39" src="./img/red.png" alt="" /><img
+                id="bluetoken39"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d38">
+              38<img id="redtoken38" src="./img/red.png" alt="" /><img
+                id="bluetoken38"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d37">
+              37<img id="redtoken37" src="./img/red.png" alt="" /><img
+                id="bluetoken37"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d36">
+              36<img id="redtoken36" src="./img/red.png" alt="" /><img
+                id="bluetoken36"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d35">
+              35<img id="redtoken35" src="./img/red.png" alt="" /><img
+                id="bluetoken35"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d34">
+              34<img id="redtoken34" src="./img/red.png" alt="" /><img
+                id="bluetoken34"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d33">
+              33<img id="redtoken33" src="./img/red.png" alt="" /><img
+                id="bluetoken33"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d32">
+              32<img id="redtoken32" src="./img/red.png" alt="" /><img
+                id="bluetoken32"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d31">
+              31<img id="redtoken31" src="./img/red.png" alt="" /><img
+                id="bluetoken31"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d21">
+              21<img id="redtoken21" src="./img/red.png" alt="" /><img
+                id="bluetoken21"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d22">
+              22<img id="redtoken22" src="./img/red.png" alt="" /><img
+                id="bluetoken22"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d23">
+              23<img id="redtoken23" src="./img/red.png" alt="" /><img
+                id="bluetoken23"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d24">
+              24<img id="redtoken24" src="./img/red.png" alt="" /><img
+                id="bluetoken24"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d25">
+              25<img id="redtoken25" src="./img/red.png" alt="" /><img
+                id="bluetoken25"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d26">
+              26<img id="redtoken26" src="./img/red.png" alt="" /><img
+                id="bluetoken26"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d27">
+              27<img id="redtoken27" src="./img/red.png" alt="" /><img
+                id="bluetoken27"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d28">
+              28<img id="redtoken28" src="./img/red.png" alt="" /><img
+                id="bluetoken28"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d29">
+              29<img id="redtoken29" src="./img/red.png" alt="" /><img
+                id="bluetoken29"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d30">
+              30<img id="redtoken30" src="./img/red.png" alt="" /><img
+                id="bluetoken30"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d20">
+              20<img id="redtoken20" src="./img/red.png" alt="" /><img
+                id="bluetoken20"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d19">
+              19<img id="redtoken19" src="./img/red.png" alt="" /><img
+                id="bluetoken19"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d18">
+              18<img id="redtoken18" src="./img/red.png" alt="" /><img
+                id="bluetoken18"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d17">
+              17<img id="redtoken17" src="./img/red.png" alt="" /><img
+                id="bluetoken17"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d16">
+              16<img id="redtoken16" src="./img/red.png" alt="" /><img
+                id="bluetoken16"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d15">
+              15<img id="redtoken15" src="./img/red.png" alt="" /><img
+                id="bluetoken15"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d14">
+              14<img id="redtoken14" src="./img/red.png" alt="" /><img
+                id="bluetoken14"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d13">
+              13<img id="redtoken13" src="./img/red.png" alt="" /><img
+                id="bluetoken13"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d12">
+              12<img id="redtoken12" src="./img/red.png" alt="" /><img
+                id="bluetoken12"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d11">
+              11<img id="redtoken11" src="./img/red.png" alt="" /><img
+                id="bluetoken11"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="container">
+            <div class="product" id="d1">
+              1<img id="redtoken1" src="./img/red.png" alt="" /><img
+                id="bluetoken1"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d2">
+              2<img id="redtoken2" src="./img/red.png" alt="" /><img
+                id="bluetoken2"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d3">
+              3<img id="redtoken3" src="./img/red.png" alt="" /><img
+                id="bluetoken3"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d4">
+              4<img id="redtoken4" src="./img/red.png" alt="" /><img
+                id="bluetoken4"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d5">
+              5<img id="redtoken5" src="./img/red.png" alt="" /><img
+                id="bluetoken5"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d6">
+              6<img id="redtoken6" src="./img/red.png" alt="" /><img
+                id="bluetoken6"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d7">
+              7<img id="redtoken7" src="./img/red.png" alt="" /><img
+                id="bluetoken7"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d8">
+              8<img id="redtoken8" src="./img/red.png" alt="" /><img
+                id="bluetoken8"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d9">
+              9<img id="redtoken9" src="./img/red.png" alt="" /><img
+                id="bluetoken9"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+            <div class="product" id="d10">
+              10<img id="redtoken10" src="./img/red.png" alt="" /><img
+                id="bluetoken10"
+                src="./img/blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right-div">
+        <h1 id="heading2">Player 2</h1>
+        <img id="bluedice" src="./img/bluedice.png" alt="" />
+        <img id="bluedice1" src="./img/bluedice1.png" alt="" />
+        <img id="bluedice2" src="./img/bluedice2.png" alt="" />
+        <img id="bluedice3" src="./img/bluedice3.png" alt="" />
+        <img id="bluedice4" src="./img/bluedice4.png" alt="" />
+        <img id="bluedice5" src="./img/bluedice5.png" alt="" />
+        <img id="bluedice6" src="./img/bluedice6.png" alt="" />
+        <br />
+        <button onclick="blueTurn()" id="btnblue">Roll</button>
+        <div>
+          <img id="bluetoken0" src="./img/blue.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
