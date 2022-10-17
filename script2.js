@@ -533,9 +533,7 @@ function blue(number2) {
   if (sum == 68) {
     sum = 89;
   }
-  if (sum == 10) {
-    sum = 3;
-  }
+  
   if (sum == 34) {
     sum = 15;
   }
