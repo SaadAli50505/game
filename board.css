@@ -443,7 +443,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(50000deg);
+    transform: rotate(5000deg);
   }
 }
 
